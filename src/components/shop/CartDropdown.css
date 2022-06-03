@@ -1,0 +1,45 @@
+.cart-dropdown {
+  width: 250px;
+  background: var(--secondary);
+  border-radius: 5px;
+  box-shadow: 3px 3px 25px rgba(0,0,0,.5);
+  overflow-x: hidden;
+  position: fixed;
+  bottom: 75px;
+  right: 45px;
+  z-index: 2;
+  padding: 5px 0;
+}
+
+.cart-dropdown__list {
+  width: 270px;
+  height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cart-dropdown__empty {
+  font-family: var(--font3);
+  font-size: 1.3rem;
+  color: rgba(0,0,0,.3);
+  margin: 10px 0;
+}
+
+.cart-dropdown__total {
+  font-family: var(--font3);
+  font-size: 1.1rem;
+}
+
+.cart-dropdown__total strong {
+  color: var(--primary);
+}
+
+@media (min-width: 750px) {
+
+.cart-dropdown {
+  bottom: 80px;
+  right: 50px;
+  z-index: 0;
+}
+
+}

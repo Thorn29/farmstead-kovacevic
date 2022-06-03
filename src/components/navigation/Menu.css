@@ -1,0 +1,44 @@
+.menu.mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu.main {
+  display: none;
+}
+
+.menu.footer {
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width:750px) {
+
+  .menu.main {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 2.4rem;
+    padding: 0 5%;
+    background: url('../../assets/images/woodsm.jpg');
+    position: relative;
+    z-index: 3;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .menu.main {
+    width: 70%;
+    padding: 0 15%;
+  }
+
+}

@@ -1,0 +1,15 @@
+.checkout-preview {
+  background: var(--lightarea);
+  padding: .5rem 0 .3rem;
+}
+
+.checkout-preview__price {
+  font-family: var(--font3);
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0 15px;
+}
+
+.checkout-preview__price strong {
+  color: var(--logo);
+}

@@ -1,0 +1,22 @@
+.lang-switch {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lang-switch__img {
+  display: block;
+  width: 20px;
+  margin: 0 5px;
+}
+
+.lang-switch__text {
+  font-family: var(--font4);
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.lang-switch:hover .lang-switch__text {
+  color: var(--logo);
+}

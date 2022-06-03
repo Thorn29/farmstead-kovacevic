@@ -1,0 +1,63 @@
+footer {
+  width: 100%;
+  height: 14.5rem;
+  background: url('../../assets/images/footertile.png');
+  margin-top: -60px;
+  position: relative;
+  padding-top: 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  width: 230px;
+  height: 230px;
+  background: url('../../assets/images/goat1.png');
+  background-size: cover;
+  position: absolute;
+  top: -150px;
+  right: 50px;
+  z-index: 0;
+}
+
+.footer__top > .lang-switch {
+  color: white;
+}
+
+.footer__top {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__signature {
+  font-family: var(--font2);
+  color: white;
+  font-size: .8rem;
+  line-height: 1.6rem;
+}
+
+.footer__signature strong {
+  color: var(--highlight);
+}
+
+@media (min-width: 750px) {
+
+  .footer__top {
+    flex: 0;
+    flex-direction: row;
+  }
+
+
+  .footer__top > .lang-switch {
+    margin: 1rem 20px;
+  }
+
+}

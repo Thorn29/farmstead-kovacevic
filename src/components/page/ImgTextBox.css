@@ -1,0 +1,46 @@
+.img-textbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 7%;
+}
+
+.img-textbox__image {
+  display: block;
+  max-width: 90%;
+  border: 2px solid var(--primary);
+}
+
+.img-textbox__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.img-textbox__container > .text {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+
+  .img-textbox {
+    flex-direction: row;
+  }
+
+
+  .img-textbox__container {
+    width: 50%;
+    max-width: 390px;
+  }
+
+  .img-textbox.reverse {
+    flex-direction: row-reverse;
+  }
+
+}

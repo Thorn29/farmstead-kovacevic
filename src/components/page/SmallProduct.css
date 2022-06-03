@@ -1,0 +1,22 @@
+.small-product {
+  display: block;
+  width: 80%;
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.small-product__image {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--primary);
+}
+
+.small-product__title {
+  font-family: var(--font3);
+  font-size: 1.7rem;
+  color: var(--primary);
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}

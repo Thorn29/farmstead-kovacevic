@@ -1,0 +1,47 @@
+.menu.mobile .menu-item {
+  font-family: var(--font3);
+  font-size: 1.8rem;
+  color: var(--primary);
+  text-shadow: 2px 2px 5px rgba(0,0,0,.3);
+  margin: .7rem 0;
+}
+
+.menu.mobile .menu-item.active {
+  color: var(--logo);
+}
+
+.menu.main .menu-item {
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid rgba(0,0,0,.4);
+  border-left: 1px solid rgba(255,255,255,.1);
+  font-family: var(--font1);
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2.4rem;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.menu.main .menu-item:first-of-type {
+  border-left: 1px solid rgba(0,0,0,.4);
+}
+
+.menu.main .menu-item:hover, .menu.main .menu-item.active {
+  color: var(--highlight);
+}
+
+.menu.footer .menu-item {
+  display: block;
+  padding: 0 .5rem;
+  font-family: var(--font4);
+  font-size: 1rem;
+  color: var(--secondary);
+  white-space: nowrap;
+  align-self: center;
+  line-height: 1.5rem;
+}
+
+.menu.footer .menu-item:hover, .menu.footer .menu-item.active {
+  color: white;
+}

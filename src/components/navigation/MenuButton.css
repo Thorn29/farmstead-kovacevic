@@ -1,0 +1,52 @@
+.menu-button {
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  z-index: 5;
+}
+
+.menu-button.menu-button--active {
+  position: fixed;
+}
+
+.menu-button__line {
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: .7s;
+}
+
+.menu-button__line:nth-child(2), .menu-button__line:nth-child(3) {
+top: 7px;
+}
+
+.menu-button__line:nth-child(4) {
+top: 14px;
+}
+
+.menu-button.menu-button--active .menu-button__line:nth-child(1), .menu-button.menu-button--active .menu-button__line:nth-child(4) {
+  opacity: 0;
+}
+
+.menu-button.menu-button--active .menu-button__line:nth-child(2) {
+transform: rotate(45deg);
+}
+
+.menu-button.menu-button--active .menu-button__line:nth-child(3) {
+transform: rotate(-45deg);
+}
+
+@media (min-width: 750px) {
+
+.menu-button {
+  display: none;
+}
+
+}

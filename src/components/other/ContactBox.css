@@ -1,0 +1,43 @@
+.contact-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box__data {
+  width: 100%;
+  padding: 1rem .5rem;
+  box-sizing: border-box;
+}
+
+.contact-box__title {
+  font-family: var(--font1);
+  color: var(--logo);
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
+.contact-box__text {
+  font-family: var(--font2);
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+@media (min-width: 650px) {
+
+  .contact-box {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact-box__data {
+    width: 50%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}

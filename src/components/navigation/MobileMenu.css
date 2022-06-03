@@ -1,0 +1,28 @@
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--backdrop);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.mobile-menu.mobile-menu--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 750px) {
+
+.mobile-menu,.mobile-menu.mobile-menu--active {
+  display: none;
+}
+
+}

@@ -1,0 +1,108 @@
+.banner {
+  display: block;
+  width: 100%;
+  height: 36vw;
+  background: url('../../assets/images/sky.jpg');
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner__mountains {
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/mountains.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+.banner__grass {
+  width: 100%;
+  height: 100%;
+  /* background: url('../../assets/images/grass.png'); */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: -32%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.banner__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: var(--font3);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--logo);
+  line-height: 2rem;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: .2rem 0;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.banner__fence {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/fence.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: -28%;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+@media (min-width: 750px) {
+
+.banner__logo {
+  font-size: 2.3rem;
+  line-height: 6rem;
+  position: relative;
+  align-items: center;
+  z-index: 2;
+}
+
+.banner__logo::before {
+  content: '';
+  display: block;
+  width: 110px;
+  height: 110px;
+  background: url('../../assets/images/logo.png');
+  background-size: cover;
+  margin: 0 .5rem;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.banner__logo {
+  font-size: 3rem;
+  line-height: 11rem;
+}
+
+.banner__logo::before {
+  width: 130px;
+  height: 130px;
+}
+
+}
